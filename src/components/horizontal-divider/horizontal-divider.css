@@ -1,0 +1,16 @@
+.horizontal-divider-container {
+    height: 100%;
+    width: 5%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.horizontal-divider {
+    height: 100%;
+    width: 100%;
+
+
+}
