@@ -1,0 +1,4 @@
+.board {
+    height: var(--board-height);
+    width: var(--board-width);
+}
