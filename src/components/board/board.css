@@ -1,4 +1,14 @@
 .board {
     height: var(--board-height);
     width: var(--board-width);
+display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.horizonal-divider {
+    display: flex;
+    flex-direction: row;
+    height: var(--vertical-divider-width);
+    flex: 0 0 100%
 }

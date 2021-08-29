@@ -1,0 +1,13 @@
+.square {
+    height: var(--square-height);
+    flex: 0 0 var(--square-width);
+    background-color: transparent;
+}
+
+.type-circle {
+
+}
+
+.type-cross {
+
+}

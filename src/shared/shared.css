@@ -4,9 +4,12 @@ body {
     /*lengths*/
     --board-height: 500px;
     --board-width: var(--board-height);
-    --vertical-divider-width: 5%;
+    --vertical-divider-width: 25px;
     --square-width: calc((100% - (var(--vertical-divider-width) * 2)) / 3);
     --horizontal-divider-height: var(--vertical-divider-width);
-    --square-height: calc((100% - (var(--horizontal-divider-height) * 2)) / 3);
+    --square-height: var(--square-width);
+    --divider-line-border: var(--divider-colour) solid 2px;
+    --divider-line-border-radius: 10px
+
 
 }

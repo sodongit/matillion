@@ -1,16 +1,32 @@
 .divider-container {
-    height: 100%;
-    width: 5%;
     padding: 1%;
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    flex: 0 0;
+    background-color: transparent;
 }
 
-.divider {
+.divider-vertical {
+    height: var(--square-height);
+    flex-basis: var(--vertical-divider-width);
+}
+
+.divider-horizontal {
+    height: var(--horizontal-divider-height);
+    flex-basis: var(--square-height);
+}
+
+.divider-line {
     height: 100%;
     width: 100%;
+    border: var(--divider-line-border);
+    border-radius: var(--divider-line-border-radius);
+}
 
+.divider-corner {
+    height: var(--vertical-divider-width);
+    flex: 0 0 var(--horizontal-divider-height);
 
 }
