@@ -1,0 +1,5 @@
+.cross {
+    height: var(--cross-height);
+    width: var(--cross-width);
+    fill:var(--cross-colour);
+}

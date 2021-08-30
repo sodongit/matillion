@@ -1,0 +1,6 @@
+
+.circle{
+    stroke:var(--circle-colour);
+    stroke-width: var(--circle-width);
+    fill: transparent;
+}
