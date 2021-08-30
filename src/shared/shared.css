@@ -1,6 +1,8 @@
 body {
     /*colours*/
-    --divider-colour: rgb(135, 253, 83);
+    --divider-colour: rgb(1, 10, 255);
+    --circle-colour: rgb(45, 173, 142);
+    --cross-colour: rgb(250, 0, 0);
     /*lengths*/
     --board-height: 500px;
     --board-width: var(--board-height);
@@ -9,7 +11,11 @@ body {
     --horizontal-divider-height: var(--vertical-divider-width);
     --square-height: var(--square-width);
     --divider-line-border: var(--divider-colour) solid 2px;
-    --divider-line-border-radius: 10px
+    --divider-line-border-radius: 10px;
+
+    --circle-width: 15px;
+    --cross-height: calc(100% / 3 * 2);
+    --cross-width: var(--cross-height) ;
 
 
 }

@@ -2,12 +2,8 @@
     height: var(--square-height);
     flex: 0 0 var(--square-width);
     background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.type-circle {
-
-}
-
-.type-cross {
-
-}
