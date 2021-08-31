@@ -1,7 +1,7 @@
 import React from 'react';
 import './divider.css';
 
-const Divider = ({direction}) => {
+export const Divider = ({direction}) => {
 
     const getDividerDirection = () => direction === 'v' ?
         'divider-container divider-vertical' :
@@ -14,7 +14,5 @@ const Divider = ({direction}) => {
         </div>
     );
 }
-
-export default Divider;
 
 export const DividerCorner = () => <div data-testid="divider" className="divider-corner"/>;
