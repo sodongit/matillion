@@ -1,4 +1,8 @@
 .main {
+    padding: 20px 0;
+    margin: 0 auto;
+    width: var(--board-width);
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }

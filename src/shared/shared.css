@@ -1,10 +1,13 @@
 body {
     /*colours*/
+    --white: rgb(255, 255, 255);
     --divider-colour: rgb(1, 10, 255);
     --circle-colour: rgb(45, 173, 142);
     --cross-colour: rgb(250, 0, 0);
+    --button-colour: rgb(32, 191, 107);
+    --button-colour-hover: rgb(243, 77, 77);
     /*lengths*/
-    --board-height: 500px;
+    --board-height: 450px;
     --board-width: var(--board-height);
     --vertical-divider-width: 25px;
     --square-width: calc((100% - (var(--vertical-divider-width) * 2)) / 3);
