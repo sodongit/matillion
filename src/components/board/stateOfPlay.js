@@ -1,7 +1,7 @@
 export const checkBoard = (board) => {
     const haveWeAWinner = lineOfThree(board);
 
-    return haveWeAWinner.length === 1 ?
+    return haveWeAWinner.length > 0 ?
         haveWeAWinner[0] :
         board.length === 9 && !board.includes('')? 'draw' : '';
 };

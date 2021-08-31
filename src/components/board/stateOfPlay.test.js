@@ -91,6 +91,11 @@ test('line of X top right to bottom left', () => {
     const result = checkBoard(board);
     expect(result).toBe('X');
 });
+test('2 lines of Xs', () => {
+    const board = ['X', 'O', 'X', 'O', 'X', 'X', 'O', 'O', 'X',];
+    const result = checkBoard(board);
+    expect(result).toBe('X');
+});
 
 //O wins
 test('line of O across the top', () => {
