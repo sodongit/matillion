@@ -43,7 +43,6 @@ function Game() {
     const getSquare = (id) => board[id];
 
     const resetGame = () => {
-        console.log("test");
         setBoard(emptyBoard);
         setTurn('X');
         setStateOfPlay('');

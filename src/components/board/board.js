@@ -3,7 +3,7 @@ import './board.css';
 import Square from "./components/square/square";
 import {Divider, DividerCorner} from "./components/divider/divider";
 
-const Board = ({getSquare, insertIcon}) =>
+export const Board = ({getSquare, insertIcon}) =>
         <div data-testid="board" className="board">
             <Square type={getSquare} id="0" onclick={insertIcon}/><Divider direction="v"/>
             <Square type={getSquare} id="1" onclick={insertIcon}/><Divider direction="v"/>
@@ -19,7 +19,6 @@ const Board = ({getSquare, insertIcon}) =>
         </div>;
 
 
-export default Board;
 
 const HorizontalDivider = () => <div className="horizonal-divider">
     <Divider direction="h"/>
