@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import Board from "../components/board/board";
-import {checkBoard} from "../components/board/components/stateOfPlay";
+import './game.css';
+import {checkBoard} from "../components/board/stateOfPlay";
+import {InGameMessage} from "../components/in-game-message/inGameMessage";
 
 
 const emptyBoard = ['', '', '', '', '', '', '', '', '', '',];
@@ -19,7 +21,7 @@ function Game() {
         if (gameState !== '') {
             setStateOfPlay(gameState);
         }
-    },[board]);
+    }, [board]);
 
     const changeTurn = () => {
         const nextTurn = turn === `X` ? 'O' : 'X';
@@ -39,10 +41,12 @@ function Game() {
 
     const getSquare = (id) => board[id];
 
+    const resetGame = () => setBoard(board);
 
     return (
-        <div>
+        <div className="main">
             <Board getSquare={getSquare} insertIcon={insertIcon}/>
+            <InGameMessage stateOfPlay={stateOfPlay} player={turn} resetGame={resetGame}/>
         </div>
     );
 }
