@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import Board from "../components/board/board";
+import {Board} from "../components/board/board";
 import './game.css';
 import {checkBoard} from "../components/board/stateOfPlay";
 import {InGameMessage} from "../components/in-game-message/inGameMessage";
+import {Button} from "../shared/button/button";
 
 
-const emptyBoard = ['', '', '', '', '', '', '', '', '', '',];
+const emptyBoard = ['', '', '', '', '', '', '', '', ''];
 
 
 function Game() {
@@ -41,12 +42,18 @@ function Game() {
 
     const getSquare = (id) => board[id];
 
-    const resetGame = () => setBoard(board);
+    const resetGame = () => {
+        console.log("test");
+        setBoard(emptyBoard);
+        setTurn('X');
+        setStateOfPlay('');
+    };
 
     return (
         <div className="main">
             <Board getSquare={getSquare} insertIcon={insertIcon}/>
             <InGameMessage stateOfPlay={stateOfPlay} player={turn} resetGame={resetGame}/>
+            <Button text="Reset game" onclick={resetGame}/>
         </div>
     );
 }
