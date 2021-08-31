@@ -18,7 +18,7 @@ const Square = ({type, id,  onclick}) => {
         const iconType = iconTypes[type(id)]
 
         setIcon(iconType);
-    }, [type]);
+    }, [type, id]);
 
     const playerSelect = () => {
         onclick(id);
