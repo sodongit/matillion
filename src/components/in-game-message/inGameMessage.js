@@ -17,7 +17,7 @@ export const InGameMessage = ({stateOfPlay = '', player, resetGame}) => {
                 break;
         }
 
-    }, [stateOfPlay])
+    }, [stateOfPlay, player])
 
 
     return (
@@ -29,22 +29,22 @@ export const InGameMessage = ({stateOfPlay = '', player, resetGame}) => {
 
 const ItsADraw = () => {
     return (
-        <div>
+        <div data-testid="draw">
             its a draw
         </div>
     );
 };
 const NextPlayer = ({player}) => {
     return (
-        <div>
-            next to play is
+        <div data-testid="next">
+            next to play is {player}
         </div>
     );
 };
 
 const ItsAWinner = ({winner}) => {
     return (
-        <div>
+        <div data-testid="winner">
             we have a winner its {winner}
         </div>
     );
