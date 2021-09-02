@@ -4,7 +4,8 @@ import './game.css';
 import {checkBoard} from "../components/board/stateOfPlay";
 import {InGameMessage} from "../components/in-game-message/inGameMessage";
 import {Button} from "../shared/button/button";
-
+import {Cross} from "../components/board/components/cross/cross";
+import {Circle} from "../components/board/components/circle/circle";
 
 const emptyBoard = ['', '', '', '', '', '', '', '', ''];
 
@@ -40,7 +41,7 @@ function Game() {
         }
     }
 
-    const getSquare = (id) => board[id];
+    const getSquare = (id) => board[id] === '' ? "div" : board[id] === 'X' ? Cross : Circle
 
     const resetGame = () => {
         setBoard(emptyBoard);
