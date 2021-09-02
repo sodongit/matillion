@@ -1,8 +1,7 @@
-import React from 'react';
+import React, {memo} from 'react';
 import './square.css';
 
-const Square = ({type, id,  onclick}) => {
-
+const Square = memo(({type, id,  onclick}) => {
 
     let Component = type(id);
 
@@ -15,6 +14,6 @@ const Square = ({type, id,  onclick}) => {
             <Component/>
         </div>
     );
-}
+});
 
 export default Square;
